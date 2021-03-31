@@ -54,8 +54,8 @@ class LOLSkins():
             'User-Agent': 'Mozilla / 5.0(Windows NT 10.0;Win64;x64) AppleWebKit / 537.36(KHTML, likeGecko) Chrome / 86.0.4240.111Safari / 537.36'
         }
         for json in json_list:
-            os.mkdir('D:/Python学习/爬虫学习/test/LOL皮肤原画/' + json[0]['heroName'] + '--' + json[0]['heroTitle'])
-            os.chdir('D:/Python学习/爬虫学习/test/LOL皮肤原画/' + json[0]['heroName'] + '--' + json[0]['heroTitle'])
+            os.mkdir('/LOL皮肤原画/' + json[0]['heroName'] + '--' + json[0]['heroTitle'])
+            os.chdir('/LOL皮肤原画/' + json[0]['heroName'] + '--' + json[0]['heroTitle'])
             for i in json:
                 try:
                     with open(str(i['name']) + '.jpg', 'wb') as fp:
